@@ -27,16 +27,17 @@ AS A coding boot camp student
 ## ACCEPTANCE CRITERIA
 
 GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+
+<p>WHEN I click the start button</p>
+<p>THEN a timer starts and I am presented with a question</p>
+<p>WHEN I answer a question</p>
+<p>THEN I am presented with another question</p>
+<p>WHEN I answer a question incorrectly</p>
+<p>THEN time is subtracted from the clock</p>
+<p>WHEN all questions are answered or the timer reaches 0</p>
+<p>THEN the game is over</p>
+<p>WHEN the game is over</p>
+<p>THEN I can save my initials and score</p>
 
 ## MOCK UP
 
@@ -54,7 +55,7 @@ https://github.com/ShahidHashmi1...
 
 ## Credits
 
-The collaborators on this project included my tutor, Sabrina Hanson, and my TA, Michael Kotte.
+The collaborators on this project included
 
 The resources for this vary across different platforms. I used explored various methods of populating an empty array where the user-selected criteria would fit, but ultimately landed on concatenation as the methodology. A few resources for implementing and concatenating arrays were [Javascript Plain English][2], [W3 Schools][3], and [Stack Overflow][5].
 
