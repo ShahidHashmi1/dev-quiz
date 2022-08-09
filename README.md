@@ -19,8 +19,6 @@
 
 ## USER STORY
 
-AS A coding boot camp student
-
 <p>I WANT to take a timed quiz on JavaScript fundamentals that stores high scores</p>
 <p>SO THAT I can gauge my progress compared to my peers</p>
 
