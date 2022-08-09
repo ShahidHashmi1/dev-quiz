@@ -1,0 +1,48 @@
+body {
+    /* background-image: url(https://wallpaperaccess.com/full/4317845.jpg);
+    color: #fff;
+    text-shadow: black; */
+}
+
+.main-choice-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-container {
+    display: flex;
+    width: 100%;
+    background-color: rgb(240, 141, 253);
+    font-size: 3rem;
+    min-width: 70rem;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.choice-container:hover {
+    transform: scale(1.05);
+    transform: transition (100ms);
+    cursor: pointer;
+    box-shadow: 1px 4px 0px rgb(115, 119, 234);
+}
+
+.choice-prefix {
+    text-decoration: solid;
+    padding: 1.3rem 1.3rem;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    margin: auto;
+    width: 100%;
+}
+
+#question {
+    color: rgb(49, 173, 77);
+    text-shadow: 1px 1px black;
+    font-size: 2rem;
+}
