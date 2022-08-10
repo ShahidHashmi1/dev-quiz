@@ -21,7 +21,7 @@ h2 {
     margin-bottom: 4rem;
 }
 
-.container {
+.container, #answerChoices button {
     height: 100%;
     width: 100%;
     display: flex;
@@ -46,7 +46,7 @@ h2 {
     display: none;
 }
 
-.Btn {
+.Btn, .startBtn, #answerChoices button, #highScore-Btn {
     font-size: 1.5rem;
     text-align: center;
     padding: 2rem 0;
@@ -60,8 +60,15 @@ h2 {
     text-shadow: 1px 2px black;
 }
 
-.Btn:hover {
-    box-shadow: 1px 4px 0px rgb(115, 119, 234);
+.Btn:hover, #answerChoices button {
+    box-shadow: 1px 4px 0px rgb(37, 122, 206);
+    cursor: pointer;
+    transition: transform 100ms;
+    transform: scale(1.1);
+}
+
+.startBtn:hover, #answerChoices button {
+    box-shadow: 1px 4px 0px rgb(37, 122, 206);
     cursor: pointer;
     transition: transform 100ms;
     transform: scale(1.1);
@@ -71,4 +78,63 @@ h2 {
     box-shadow: none;
     cursor: not-allowed;
     transform: none;
+}
+
+#timer {
+    color: blue;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+}
+
+.main-choice-container, #answerChoices button {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-container, #answerChoices button {
+    display: flex;
+    width: 100%;
+    background-color: rgb(240, 141, 253);
+    font-size: 3rem;
+    min-width: 70rem;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+.choice-container:hover, #answerChoices button {
+    transform: scale(1.05);
+    transform: transition (100ms);
+    cursor: pointer;
+    box-shadow: 1px 4px 0px rgb(37, 122, 206);
+}
+
+.choice-prefix, #answerChoices button {
+    text-decoration: solid;
+    padding: 1.3rem 1.3rem;
+    color: #fff;
+}
+
+.choice-text, #answerChoices button {
+    padding: 1.5rem;
+    margin: auto;
+    width: 100%;
+}
+
+.q-text {
+    color: rgb(49, 173, 77);
+    text-shadow: 1px 1px black;
+    font-size: 2rem;
+}
+
+.hidePage {
+    display: none;
+}
+
+#timerHide {
+    display: none;
 }
