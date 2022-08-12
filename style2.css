@@ -60,14 +60,14 @@ h2 {
     text-shadow: 1px 2px black;
 }
 
-.Btn:hover, #answerChoices button {
+.Btn:hover, #answerChoices button:hover {
     box-shadow: 1px 4px 0px rgb(37, 122, 206);
     cursor: pointer;
     transition: transform 100ms;
     transform: scale(1.1);
 }
 
-.startBtn:hover, #answerChoices button {
+.startBtn:hover, #answerChoices button:hover {
     box-shadow: 1px 4px 0px rgb(37, 122, 206);
     cursor: pointer;
     transition: transform 100ms;
@@ -86,6 +86,14 @@ h2 {
     position: absolute;
     top: 50px;
     right: 100px;
+}
+
+#score {
+    color: blue;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50px;
+    left: 100px;
 }
 
 .main-choice-container, #answerChoices button {
@@ -119,7 +127,7 @@ h2 {
     color: #fff;
 }
 
-.choice-text, #answerChoices button {
+.choice-text, #answerChoices button  {
     padding: 1.5rem;
     margin: auto;
     width: 100%;
@@ -135,6 +143,24 @@ h2 {
     display: none;
 }
 
-#timerHide {
-    display: none;
+#highscores li {
+    color: rgb(49, 173, 77);
+    text-shadow: 2px 2px black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100rem;
+    min-width: 70rem;
+    margin-bottom: 0.8rem;
+    border-radius: 5px;
+    padding: 10px 10px;
+}
+
+#play-again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: rgb(240, 141, 253);
 }

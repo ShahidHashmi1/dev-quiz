@@ -95,3 +95,21 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+// create function that sets event listeners on all answered buttons
+// inside that event listener, create another function that evaluates whether the answer is correct && call viewQuestion() or make a new one called nextQuestion()
+// indexQuestion++;
+// correctAnswer();
+
+// function userAnswer(answer) {
+// var currentAnswer = quizQuestions[indexQuestion ].answer;
+// if (answer === currentAnswer)
+// // score++;
+// console.log("correctamundo muchacho!");
+// else console.log("You're wrong - feel bad!");
+
+// indexQuestion++;
+// viewQuestion();
+// }
+
+// if the answerChoices/ questionAnswers button that is clicked correct/ equal to the quizQuestions array's answer, then it is correct and we want to view the next question //

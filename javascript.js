@@ -4,11 +4,14 @@ var startBtn = document.querySelector(".startBtn");
 var timerEl = document.getElementById("timer");
 var homeScreen = document.getElementById("homeScreen");
 var quizPlay = document.getElementById("quizPlay");
-// var navTimer = document.querySelector(".navTimer");
 var indexQuestion = 0;
 var secondsLeft = 100;
 var questionTitle = document.querySelector("#question");
 var questionAnswers = document.querySelector("#answerChoices");
+var scoreEl = document.getElementById("score");
+var newBtns = document.querySelector("button");
+var score = 0;
+var highScoresEl = document.querySelector("#highscores");
 
 function startTimer() {
   var timerInterval = setInterval(function () {
@@ -17,42 +20,65 @@ function startTimer() {
 
     if (secondsLeft === 0) {
       clearInterval(timerInterval);
+      gameOver();
     }
   }, 1000);
 }
 
-// 2
-function viewQuestion() {
-  var currentQuestionObj = quizQuestions[indexQuestion];
-  questionTitle.textContent = currentQuestionObj.question;
-  for (let index = 0; index < currentQuestionObj.choices.length; index++) {
-    var button = document.createElement("button");
-    button.textContent = currentQuestionObj.choices[index];
-    questionAnswers.appendChild(button);
-
-    // insert and/or append the answers into the choice boxes
-  }
-}
-
-// if the answerChoices/ questionAnswers button that is clicked correct/ equal to the quizQuestions array's answer, then it is correct and we want to view the next question //
-
-// 3
-// function correctAnswer () {
-//     if (questionAnswers == quizQuestions[choices]) {
-//         console.log()
-//     } else () {
-//         timerEl.textContent -= secondsLeft (30);
-//     }
-//     return viewQuestion();
-// };
-
-// 1
 function startQuiz() {
   startTimer();
   homeScreen.setAttribute("class", "hidePage");
   quizPlay.removeAttribute("class");
   timerEl.removeAttribute("class");
+  scoreEl.removeAttribute("class");
   viewQuestion();
+}
+
+function viewQuestion() {
+  if (indexQuestion >= quizQuestions.length) {
+    gameOver();
+    return;
+  }
+  var currentQuestionObj = quizQuestions[indexQuestion];
+  questionTitle.textContent = currentQuestionObj.question;
+  questionAnswers.innerHTML = "";
+  for (let index = 0; index < currentQuestionObj.choices.length; index++) {
+    var button = document.createElement("button");
+    button.textContent = currentQuestionObj.choices[index];
+    questionAnswers.appendChild(button);
+    button.addEventListener("click", userAnswer, newBtns.remove());
+  }
+}
+
+function userAnswer(answer) {
+  var currentAnswer = quizQuestions[indexQuestion].answer;
+  var correctAnswer = answer.target.innerText;
+  console.log(currentAnswer);
+  console.log(correctAnswer);
+
+  if (correctAnswer === currentAnswer) {
+    score++;
+  } else {
+    secondsLeft -= 20;
+  }
+  showScore();
+  indexQuestion++;
+  if (indexQuestion > quizQuestions.length) {
+    gameOver();
+  }
+  viewQuestion();
+}
+
+function showScore() {
+  scoreEl.textContent = "SCORE:" + score;
+}
+
+function gameOver() {
+  var userInitials = prompt("Enter your initials");
+  var highScores = localStorage.getItem("highscores") || "";
+  var newScores = highScores + userInitials + " = " + score + ",";
+  localStorage.setItem("highscores", newScores);
+  window.location = "index2.html";
 }
 
 var quizQuestions = [
@@ -84,8 +110,45 @@ var quizQuestions = [
     ],
     answer: "var fakeVariable = $('<p>');",
   },
+  {
+    question: "Which language wowuld be best used in tandem with bootstrap?",
+    choices: ["java", "javascript", "css", "html"],
+    answer: "css",
+  },
+  {
+    question: "What does html stand for?",
+    choices: [
+      "hypertext markup language",
+      "halflife text moving language",
+      "high-tech markup language",
+      "hyper-text manager language",
+    ],
+    answer: "hypertext markup language",
+  },
+  {
+    question: "What does CSS stand for?",
+    choices: [
+      "corresponding style sheet",
+      "concatenating styling software",
+      "cascading style sheets",
+      "corresponding styling software",
+    ],
+    answer: "cascading style sheets",
+  },
 ];
 
-// event listeners
-
-startBtn.addEventListener("click", startQuiz);
+if (highScoresEl) {
+  alert("Here are the victors!");
+  var highScores = localStorage.getItem("highscores");
+  // the split method creates an array at the string of ","
+  // MDN link here -->
+  var highScoreArray = highScores.split(",");
+  highScoreArray.forEach((score) => {
+    var scoreLi = document.createElement("li");
+    scoreLi.textContent = score;
+    highScoresEl.appendChild(scoreLi);
+  });
+}
+if (startBtn) {
+  startBtn.addEventListener("click", startQuiz);
+}
