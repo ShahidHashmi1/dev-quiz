@@ -78,7 +78,7 @@ function gameOver() {
   var highScores = localStorage.getItem("highscores") || "";
   var newScores = highScores + userInitials + " = " + score + ",";
   localStorage.setItem("highscores", newScores);
-  window.location = "index2.html";
+  window.location = "index.html";
 }
 
 var quizQuestions = [
