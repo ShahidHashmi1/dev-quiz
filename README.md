@@ -17,6 +17,10 @@
 
 ## Installation
 
+First we need to download a code viewer, such as VSCODE.
+
+<p>Then we must have an open browswer with developer tools available, such as google chrome or mozilla firefox</p>
+
 ## USER STORY
 
 <p>I WANT to take a timed quiz on JavaScript fundamentals that stores high scores</p>
@@ -39,36 +43,21 @@ GIVEN I am taking a code quiz
 
 ## MOCK UP
 
-![Developer Quiz](./)
+![Developer Quiz](./Developer%20Quiz.png)
 
 ## SUBMISSION
 
 The fully-deployed website for this password generator can be found through the following GitHub Pages link:
 
-https://shahidhashmi1.github.io...
+https://shahidhashmi1.github.io/dev-quiz/
 
 The associated html code, css stylesheet, and javascript for this assignment can be found at the following GitHub repository link:
 
-https://github.com/ShahidHashmi1...
+https://github.com/ShahidHashmi1/dev-quiz
 
 ## Credits
 
-The collaborators on this project included
-
-The resources for this vary across different platforms. I used explored various methods of populating an empty array where the user-selected criteria would fit, but ultimately landed on concatenation as the methodology. A few resources for implementing and concatenating arrays were [Javascript Plain English][2], [W3 Schools][3], and [Stack Overflow][5].
-
-Some other things I had referenced, were different methods of utilizing a copy button so that the end-user may grab the password and copy to their clipboard for further use elsewhere. The references used are for this, and other concepts such as for loops - were places like [W3 Schools][1], [Youtube][4], [Stack Overflow][6], [MDN][7], [Code Grepper][8], [Dev To][9], and [Codepen][10].
-
-[1]: https://www.w3schools.com/js/js_loop_for.asp "W3 Schools"
-[2]: https://javascript.plainenglish.io/three-ways-to-merge-arrays-in-javascript-27cef85fe67b "Javascript Plain English"
-[3]: https://www.w3schools.com/jsref/jsref_concat_array.asp "W3 Schools"
-[4]: https://www.youtube.com/watch?v=NHg6jQajaMs "Youtube"
-[5]: https://stackoverflow.com/questions/1288095/append-to-string-variable "Stack Overflow"
-[6]: https://stackoverflow.blog/2019/09/12/practical-ways-to-write-better-javascript/ "Stack Overflow"
-[7]: https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event "MDN"
-[8]: https://www.codegrepper.com/code-examples/javascript/copy+button+html "Code Grepper"
-[9]: https://dev.to/michaelburrows/copy-text-to-the-system-clipboard-on-click-with-javascript-1c0k "Dev To"
-[10]: https://codepen.io/shaikmaqsood/pen/XmydxJ "Codepen"
+The collaborators on this project included my tutor, Sabrina Hason, cohort member Nick Mason, and my instructor Eric Weiss.
 
 <p>If this text is not readable, please refer to the GitHub repository link I have provided above that will outline the exact URLs for these references.</p>
 
@@ -95,21 +84,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-// create function that sets event listeners on all answered buttons
-// inside that event listener, create another function that evaluates whether the answer is correct && call viewQuestion() or make a new one called nextQuestion()
-// indexQuestion++;
-// correctAnswer();
-
-// function userAnswer(answer) {
-// var currentAnswer = quizQuestions[indexQuestion ].answer;
-// if (answer === currentAnswer)
-// // score++;
-// console.log("correctamundo muchacho!");
-// else console.log("You're wrong - feel bad!");
-
-// indexQuestion++;
-// viewQuestion();
-// }
-
-// if the answerChoices/ questionAnswers button that is clicked correct/ equal to the quizQuestions array's answer, then it is correct and we want to view the next question //
