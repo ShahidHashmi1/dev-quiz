@@ -43,7 +43,7 @@ GIVEN I am taking a code quiz
 
 ## MOCK UP
 
-![Developer Quiz](./Developer%20Quiz.png)
+![Developer Quiz](./assets/images/Developer%20Quiz.png)
 
 ## SUBMISSION
 
