@@ -111,7 +111,7 @@ var quizQuestions = [
     answer: "var fakeVariable = $('<p>');",
   },
   {
-    question: "Which language wowuld be best used in tandem with bootstrap?",
+    question: "Which language would be best used in tandem with bootstrap?",
     choices: ["java", "javascript", "css", "html"],
     answer: "css",
   },
