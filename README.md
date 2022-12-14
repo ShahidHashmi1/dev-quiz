@@ -5,61 +5,20 @@
 ## Table of Contents
 
 - [Description](#description)
-- [Installation](#installation)
-- [User Story](#user-story)
-- [Acceptance Criteria](#acceptance-criteria)
 - [Mock Up](#mock-up)
-- [Submission](#submission)
-- [Credits](#credits)
+- [Deployment](#deployment)
 - [License](#license)
 
 ## Description
-
-## Installation
-
-First we need to download a code viewer, such as VSCODE.
-
-<p>Then we must have an open browswer with developer tools available, such as google chrome or mozilla firefox</p>
-
-## USER STORY
-
-<p>I WANT to take a timed quiz on JavaScript fundamentals that stores high scores</p>
-<p>SO THAT I can gauge my progress compared to my peers</p>
-
-## ACCEPTANCE CRITERIA
-
-GIVEN I am taking a code quiz
-
-<p>WHEN I click the start button</p>
-<p>THEN a timer starts and I am presented with a question</p>
-<p>WHEN I answer a question</p>
-<p>THEN I am presented with another question</p>
-<p>WHEN I answer a question incorrectly</p>
-<p>THEN time is subtracted from the clock</p>
-<p>WHEN all questions are answered or the timer reaches 0</p>
-<p>THEN the game is over</p>
-<p>WHEN the game is over</p>
-<p>THEN I can save my initials and score</p>
+Here is a looped quiz application. The user is on a clock to complete the quiz, and every wrong answer decreases their time. Once the timer interval reaches zero, the quiz ends. All data is stored to localstorage and retrieved to view high scores. Can easily be scaled and changed to meet other criteria.
 
 ## MOCK UP
 
 ![Developer Quiz](./assets/images/Developer%20Quiz.png)
 
-## SUBMISSION
+## Deployment
 
-The fully-deployed website for this password generator can be found through the following GitHub Pages link:
-
-https://shahidhashmi1.github.io/dev-quiz/
-
-The associated html code, css stylesheet, and javascript for this assignment can be found at the following GitHub repository link:
-
-https://github.com/ShahidHashmi1/dev-quiz
-
-## Credits
-
-The collaborators on this project included my tutor, Sabrina Hason, cohort member Nick Mason, and my instructor Eric Weiss.
-
-<p>If this text is not readable, please refer to the GitHub repository link I have provided above that will outline the exact URLs for these references.</p>
+<a href="https://shahidhashmi1.github.io/dev-quiz/">GitHub Pages</a>
 
 ## License
 
